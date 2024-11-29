@@ -4,6 +4,7 @@ document.querySelectorAll('#btn-comprar').forEach(button => {
     button.addEventListener('click', () => {
         // Aqui você pode adicionar o redirecionamento para a página de pagamento
         window.location.href = "https://pay.kiwify.com.br/ELNkVn6";
+        fbq('track', 'InitiateCheckout', { value: 13.90, currency: 'BRL' });
     });
 });
 
